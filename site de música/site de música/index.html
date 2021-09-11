@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyMusicList</title>
+        <link href="./css/style.css" rel="stylesheet" />
+        <meta name="author" content="Luis Felipe Ries Pereira"/>
+        <meta name="description" content="Site de música do Luis"/>
+    </head>
+    <body>
+        <header class="container">
+            <div id="play">
+                <img src="./imagens/Play.PNG">
+            </div>
+            <nav id="MyMusic">
+                <ul>
+                    <li ><a href="#musiclist">MyMusicList</a></li>
+                </ul>
+            </nav> 
+            <nav id="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Musics</a></li>
+                    <li><a href="">User's list</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>   
+        </header>
+        <main class="container">
+                <h1 id="text">Luis Felipe's<br>Music List:</h1>
+            <div>
+            <div class="image-area">
+                <img src="./imagens/Demon_Days.jpg" alt="">
+            </div>
+            <div class="song-details">
+                <p class="music-name">Dirty Harry - Demon Days</p>
+                <p class="artist">Gorillaz</p>
+            </div>
+            <audio controls id = "audio">
+                <source src="uaudio/y2mate.com - Gorillaz  Dirty Harry Official Video (1).mp3" type="">
+              </audio>
+            </div>
+            <div>
+            <div class="image-area">
+                <img src="./imagens/Nirvana_-_Come_as_You_Are.jpg" alt="">
+            </div>
+            <div class="song-details">
+                <p class="music-name">Nevermind - Come as You Are</p>
+                <p class="artist">Nirvana</p>
+            </div>
+            <audio controls id = "audio">
+                <source src="uaudio/Come As You Are_160k.mp3" type="">
+              </audio>
+            </div>
+            <div>
+            <div class="image-area">
+                <img src="./imagens/7mai16.jpg" alt="">
+            </div>
+            <div class="song-details">
+                <p class="music-name">Paint it, Black - Paint it, Black</p>
+                <p class="artist">The Rolling Stones</p>
+            </div>
+            <audio controls id = "audio">
+                <source src="uaudio/The Rolling Stones - Paint It, Black (Official Lyric Video)_160k.mp3" type="">
+              </audio>
+            </div>
+            <div>
+            <div class="image-area">
+                <img src="./imagens/51c+g5PESsL._AC_.jpg" alt="">
+            </div>
+            <div class="song-details">
+                <p class="music-name">O my - Body Of Years</p>
+                <p class="artist">Mother Mother</p>
+            </div>
+            <audio controls id = "audio">
+                <source src="uaudio/Body Of Years_160k.mp3" type="">
+            </audio>
+            </div>
+        </main>
+        <footer class="container">
+            <div>
+                <p>Contact: Mymusic@gmail.com</p>
+            </div>
+            <div id="musiclife"><p>Music is Life</p></div>
+        </footer>
+    </body>
+
+    <script>
+        let nav=document.querySelector("#menu")
+        let icon= document.querySelector("#play")
+        icon.onclick=function(){
+            if(nav.style.display=="none")
+                nav.style.display="block"
+            else
+                nav.style.display="none"
+        }
+    
+    </script>
+</html>    
